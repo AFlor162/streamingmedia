@@ -14,7 +14,15 @@ h2 {
 }
 h3  {
     font-size: 1em;
+    color:#590242;
 }
+p{
+    font-size: 1em;
+}
+dd {
+    font-size: 1em;
+}
+
 nav ul {
     display:grid;
     background-color: #020873;
@@ -22,10 +30,11 @@ nav ul {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 header div{
-    background:linear-gradient(to right,#2104d9,#030abc,#020659);
+    background:linear-gradient(to right,#2104d9,#020659);
 }
 .scroll {
     display: grid;
+    background-color: white;
     grid-template-columns: repeat(5,1fr);
     overflow-x:auto;
     overflow-y:hidden;
@@ -46,6 +55,7 @@ header div{
 }
 dl {
     display:flex;
+    font-size: 1em;
 }
 dt {
     padding-right: 5px;
@@ -62,8 +72,18 @@ audio {
 #yourplaylists {
     display:grid;
     grid-template-rows: auto;
+    background-color:#2699FB;
 }
 #curated {
     display:grid;
     grid-template-rows: auto;
+    background-color: #020873;
+}
+#yourplaylists section {
+    background-color:#0D8DFB;
+    margin: 10px;
+}
+#curated section {
+    margin: 10px;
+    background-color:#020659;
 }
