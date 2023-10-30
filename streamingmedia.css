@@ -82,8 +82,14 @@ audio {
 #yourplaylists section {
     background-color:#0D8DFB;
     margin: 10px;
+    display:flex;
+}
+#yourplaylists img {
+    margin:5px;
 }
 #curated section {
+    display: grid;
     margin: 10px;
     background-color:#020659;
+    grid-template-columns: 1fr 1fr;
 }
