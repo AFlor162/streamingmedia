@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="streamingmedia.css">
-        <title>MuzakMaker</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>MuzakMaker- Smooth Jazz</title>
+</head>
+<body>
     <header>
-        <nav>
-            <ul>
-                <li>MuzakMaker</li>
-                <li>Trending Songs</li>
-                <li>Your playlists</li>
-                <li>Curated Playlists</li>
-                <li><img src="./images/duke-silver.png" alt="duke silver icon"></li>
-            </ul>
-        </nav>
-        <div>
-            <h1>Smooth Jazz</h1>
-            <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
-        </div>
+        <h1>Smooth Jazz</h1>
+        <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
     </header>
-    <main>
+    <nav>
+        <h2>Main Navigation</h2>
+        <input type="checkbox" id="dropdown" />
+        <label for="dropdown"><span></span></label>
+        <ul>
+          <li><a href="#home">MuzakMaker</a></li>
+          <li><a href="#trending">Trending <br />Songs</a></li>
+          <li><a href="#playlists">Your  <br />Playlists</a></li>
+          <li><a href="#curated">Curated  <br />Playlists</a></li>
+          <li><a href="user"><img src="images/duke-silver.png" alt="user profile picture"></a></li>
+        </ul>
+    </nav>
         <h2>Trending Songs</h2>
         <section class="scroll">
             <section>
@@ -151,7 +153,7 @@
                     <h3>More curated</h3>
             </section>
         </section>
-    </main>
+    </body>
     <footer>
         <p>Copyright 2022 Smooth Jazz</p>
     </footer>
