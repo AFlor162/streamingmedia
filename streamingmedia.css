@@ -2,6 +2,7 @@ html {
     background-color: #020659;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:white;
+    margin:auto;
 }
 h1 {
     font-size:1.25em;
@@ -12,4 +13,21 @@ h2 {
 }
 h3  {
     font-size: 1em;
+}
+nav ul {
+    display:grid;
+    background-color: #020873;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.scroll {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    overflow-x:auto;
+    overflow-y:hidden;
+
+}
+.scroll section {
+    margin: 10px;
+    position: relative;
 }
