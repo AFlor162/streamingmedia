@@ -21,6 +21,9 @@ nav ul {
     list-style-type: none;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+header div{
+    background:linear-gradient(to right,#2104d9,#030abc,#020659);
+}
 .scroll {
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -51,4 +54,16 @@ audio {
     position: absolute;
     bottom: 150px;
     left: 5px;
+}
+#playlists {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+#yourplaylists {
+    display:grid;
+    grid-template-rows: auto;
+}
+#curated {
+    display:grid;
+    grid-template-rows: auto;
 }
