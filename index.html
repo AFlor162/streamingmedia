@@ -14,7 +14,6 @@
             <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
         </header>
         <nav>
-            <h2>Main Navigation</h2>
             <input type="checkbox" id="dropdown" />
             <label for="dropdown"><span></span></label>
             <ul>
@@ -27,7 +26,7 @@
         </nav>
     </section>
         <h2>Trending Songs</h2>
-        <section class="scroll" id="trending">
+        <div class="scroll" id="trending">
             <section>
                 <div>                  
                     <h3>Aloma</h3>
@@ -93,44 +92,44 @@
                         Your browser does not support the audio element.
                     </audio>
             </section>
-            <h3>More trending</h3>
-        </section> 
+            <h3 class="buttons">More trending</h3>
+        </div> 
+        <div id="allplaylists">
+        <h2>Your playlists</h2>
         <section class ="scroll" id="playlists">
-            <section id="yourplaylists">
-                <h2>Your Playlists</h2>
                 <section>
                     <img src="./images/best-of-2020-cover.png" alt="best of 2020 album cover">
                     <h3>Best of 2020</h3>
-                    The music that got you through the lock down.
+                    <p>The music that got you through the lock down.</p>
                 </section>
                 <section>
                     <img src="./images/pumpkin-spice-cover.png" alt="pumpkin spice album cover">
                     <h3>Pumpkin Spice</h3>
-                    Creamy and spicy, just like your favorite autumnal latte.
+                    <p>Creamy and spicy, just like your favorite autumnal latte.</p>
                 </section>
                 <section>
                     <img src="./images/quiet-storm-cover.png" alt="quiet storm album cover">
                     <h3>Quiet Storm</h3>
-                    Slow tempos and relaxed rhythms. 
+                    <p>Slow tempos and relaxed rhythms.</p> 
                 </section>
                 <section>
                     <img src="./images/smooth-jazz-cover.png" alt="smooth jazz album cover">
                     <h3>Smooth Jazz</h3>
-                    The pioneers of smooth jazz
+                    <p>The pioneers of smooth jazz</p>
                 </section>
                 <section>
                     <img src="./images/smooth-study-cover.png" alt="smooth study album cover">
                     <h3>Smooth Study</h3>
-                    Background music to keep you going while you study. 
+                    <p>Background music to keep you going while you study.</p> 
                 </section>
-                    <h3>All your playlists</h3>
             </section>
-            <section id="curated">
-                <h2>Curated Playlists</h2>
+            <h3 class="buttons">All your playlists</h3>
+            <h2>Curated playlists</h2>
+            <section class="scroll" id="curated">
                 <section>
                     <img src="./images/boozy-brunch-cover.png" alt="boozy brunch album cover">
                     <h3>Boozy Brunch</h3>
-                    Light up the afternoon with these energetic hits. 
+                    <p>Light up the afternoon with these energetic hits.</p>
                 </section>
                 <section>
                     <img src="./images/dinner-party-cover.png" alt="dinner party album cover">
@@ -150,11 +149,12 @@
                 <section>
                     <img src="./images/smooth-saxophone-cover.png" alt="smooth saxophone album cover">
                     <h3>Jazz Saxophone</h3>
-                    The greatest collection of your sax favorites.
+                    <p>The greatest collection of your sax favorites.</p>
                 </section>
-                    <h3>More curated</h3>
-            </section>
         </section>
+    </div>
+        <h3 class="buttons">More curated</h3>
+    </div>
     </body>
     <footer>
         <p>Copyright 2022 Smooth Jazz</p>

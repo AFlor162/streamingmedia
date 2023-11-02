@@ -51,196 +51,470 @@ html {
     background-color: #020659;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body {
-    width: 375px;
-    margin: 0 auto;
-    background-color: #ffffff;
-}
-header {
-    margin-top: 100px;
-    margin-bottom:50px;
-}
-header h1 {
-   margin:10px;
-   font-style:strong;
-}
-nav {
-    background-color:#020659;
-    position:absolute;
-    z-index:0;
-    top:0;
-}
-nav li {
-    list-style: none;
-}
-nav li:first-child{
-    position: absolute;
-    z-index:0;
-    top:50%;
-    left:50%;
-    font-size: 1.25em;
-}
-nav a {
-    text-decoration: none;
-    color:#ffffff;
-}
-/*hamburger menu start*/
-ul {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
-label {
-    cursor: pointer;
-    display: inline-block;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-}
-label span {
-    background-color: #ffffff;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background-color .2s ease-out;
-    width: 18px;
-}
-label span:before, label span:after {
-    background: #ffffff;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-label span:before {
-    top: 5px;
-}
-label span:after {
-    top: -5px;
-}
-input {
-    display: none;
-}
-input:checked ~ ul {
-    max-height: 500px;
-}
-input:checked ~ label span {
-    background: transparent;
-}
-input:checked ~ label span:before {
-    transform: rotate(-45deg);
-}
-input:checked ~ label span:after {
-    transform: rotate(45deg);
-}
-input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-    top: 0;
-}
+@media screen and (max-width:834px) {
 
-@media screen and (min-width:834px) {
-    ul {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    body {
+        width: 375px;
+        margin: 0 auto;
+        background-color: #ffffff;
     }
-    label span, input {
+    header {
+        margin-top: 100px;
+        margin-bottom:50px;
+        padding: 20px;
+    }
+    header h1 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    }
+    nav {
+        background-color:#020659;
+        position:absolute;
+        z-index:0;
+        top:0;
+    }
+    nav li {
+        list-style: none;
+    }
+    @media screen and (max-width:834px){
+        nav li:first-child{
+            position: absolute;
+            z-index:0;
+            margin-left: 75px;
+            font-size: 2em;
+        }
+    }
+    nav a {
+        text-decoration: none;
+        color:#ffffff;
+    }
+    /*hamburger menu start*/
+    ul {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    label {
+        cursor: pointer;
+        display: inline-block;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    label span {
+        background-color: #ffffff;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background-color .2s ease-out;
+        width: 18px;
+    }
+    label span:before, label span:after {
+        background: #ffffff;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    label span:before {
+        top: 5px;
+    }
+    label span:after {
+        top: -5px;
+    }
+    input {
         display: none;
     }
-}
-/*hamburger menu end*/
+    input:checked ~ ul {
+        max-height: 500px;
+    }
+    input:checked ~ label span {
+        background: transparent;
+    }
+    input:checked ~ label span:before {
+        transform: rotate(-45deg);
+    }
+    input:checked ~ label span:after {
+        transform: rotate(45deg);
+    }
+    input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+        top: 0;
+    }
 
-header {
-    background: linear-gradient(to right,#2104d9,#020659);
-    color:#ffffff;
-}
+    @media screen and (min-width:834px) {
+        ul {
+            overflow: visible;
+            position: absolute;
+            top: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        label span, input {
+            display: none;
+        }
+    }
+    /*hamburger menu end*/
 
-h1 {
-    font-size: 1.25em;
-}
-h2 {
-    font-size: 1em;
-}
-h3 {
-    font-size: 1em;
-}
-p {
-    font-size: 1em;
-}
-dl {
-    font-size: 1em;
-}
-dd {
-    font-size: 1em;
-}
-footer p {
-    font-size: .75em;
-}
-/*custom scroll*/
-.scroll {
-    display:grid;
-    grid-template-columns: repeat(5,1fr);
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-.scroll section {
-    margin:10px;
-    position: relative;
-}
-.scroll div {
-    position: absolute;
-    top: 251px;
-    background-color:rgba(100, 100, 100, .75);
-    padding: 5px;
-    height: 50px;
-    width: 350px;
-}
-dl {
-    display: flex;
-}
-dt {
-    padding-right:5px;
-}
-#trending ::-webkit-scrollbar {
+    header {
+        background: linear-gradient(to right,#2104d9,#000);
+        color:#ffffff;
+    }
+
+    h1 {
+        font-size: 1.25em;
+    }
+    h2 {
+        font-size: 1em;
+        font-weight: bold;
+        color:#590242;
+        margin-left:25px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 1em;
+    }
+    dl {
+        font-size: 1em;
+        color:#590242;
+    }
+    dd {
+        font-size: 1em;
+        color:#590242;
+    }
+    footer p {
+        font-size: .75em;
+        color:#590242;
+        margin-left: 25%;
+        margin-top: 10%;
+    }
+    .scroll h3 {
+        color:#590242;
+        font-weight: bold;
+    }
+    /*custom scroll*/
+    .scroll {
+        display:grid;
+        grid-template-columns: repeat(5, 1fr);
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .scroll section {
+        margin:10px;
+        position: relative;
+    }
+    .scroll div {
+        position: absolute;
+        top: 251px;
+        background-color:rgba(100, 100, 100, .75);
+        padding: 5px;
+        height: 50px;
+        width: 350px;
+    }
+    dl {
+        display: flex;
+    }
+    dt {
+        padding-right:5px;
+
+    }
+
+    audio {
+        position: absolute;
+        bottom:150px;
+        left:5px;
+    }
+    #trending ::-webkit-scrollbar {
+            width: 15px;
+    }
+    #trending ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 15px #590242;
+    }
+    #trending ::-webkit-scrollbar-thumb {
+        background:#590242;
+        border-radius: 5px;
+    }
+    #trending ::-webkit-scrollbar-thumb:hover {
+        background: #020659;
+    }
+    #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
         width: 15px;
+    }
+    #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+        box-shadow: inset 0 0 15px #020659;
+    }
+    #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+        background: #020659;
+        border-radius: 5px;
+    }
+    #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+    /*custom scroll end*/
+    /*custom audio*/
+    audio::-webkit-media-controls-mute-button {
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+    audio::-webkit-media-controls-play-button {
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+    audio::-webkit-media-controls-enclosure {
+        background-color:rgba(255, 255, 255, .5);
+    }
+    /*custom audio end*/
+    .buttons {
+        display:block;
+        background-color: #590242;
+        color:#ffffff;
+        border-radius: 5px;
+        width: 150px;
+        padding: 10px;
+        margin: 10px;
+    }
+    #curated {
+        background-color:#030A8C;
+        color:#ffffff;
+    }
+    #curated section {
+        background-color:#020659;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #curated h3{
+        color:#ffffff;
+        margin: 5px;
+        padding-bottom: 5px;
+    }
+
+    #playlists {
+        background-color: #2699fb;
+        color:#ffffff;
+    }
+
+    #playlists section {
+        background-color:#0d8dFB;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #playlists h3 {
+        color:#ffffff;
+        margin: 5px;
+        padding-bottom: 5px;
+    }
 }
-#trending ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 15px #590242;
+@media screen and (min-width:1200px) {
+    body {
+        width:834px;
+        background-color: #ffffff;
+        margin: 0 auto;
+    }
+    nav {
+        background-color:#020873;
+        position:absolute;
+        z-index:0;
+        top:0;
+        width:834px;
+    }
+    nav ul {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    nav a {
+        list-style: none;
+        text-decoration: none;
+        color:#ffffff;
+    }
+    nav li:first-child {
+        font-size:2em;
+        padding-right:25px;
+    
+    }
+    header {
+        background: linear-gradient(to right,#2104d9,#000);
+        color:#ffffff;
+        height: 75px;
+        margin-top: 56px;
+    }
+    header h1 {
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    header p {
+        margin-left: 10px;
+    }
+    #trending {
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    #trending section {
+        margin:10px;
+        position: relative;
+    }
+    #trending div {
+        position: absolute;
+        top: 251px;
+        background-color:rgba(100, 100, 100, .75);
+        padding: 5px;
+        height: 50px;
+        width: 350px;
+    }
+    dl {
+        display: flex;
+    }
+    dt {
+        padding-right:5px;
+    }
+    #allplaylists {
+        display: grid;
+        grid-template-rows: 1fr 17fr;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5px;
+    }
+    #allplaylists h2 {
+        grid-row-start: 1;
+        grid-row-end:1;
+    }
+    #allplaylists .scroll {
+        grid-row-start: 2;
+        grid-row-end:2;
+    }
+
+    #curated {
+        background-color:#030A8C;
+        color:#ffffff;
+        height: 450px;
+        grid-template-rows: repeat(5,1fr);
+        overflow-x: auto;
+    }
+    #curated section {
+        background-color:#020659;
+        margin: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #curated img {
+        padding: 10px;
+    }
+
+    #curated h3{
+        color:#ffffff;
+        display: flex;
+        float: right;
+        margin-right: 50px;
+        margin-top: 25px;
+        font-weight: bolder;
+    }
+
+    #curated p {
+        float:none;
+    }
+
+
+    #playlists {
+        background-color: #2699fb;
+        color:#ffffff;
+        display:grid;
+        height:450px;
+        grid-template-rows: repeat(5,1fr);
+        overflow-x: auto;
+    }
+
+
+    #playlists section {
+        background-color:#0d8dFB;
+        margin: 10px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #playlists p {
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    #playlists h3 {
+        color:#ffffff;
+        margin: 5px;
+        padding-bottom: 5px;
+    }
+    footer p {
+        font-size: .75em;
+        color:#590242;
+        margin-left:40%;
+    }
+    .buttons {
+        display:block;
+        background-color: #590242;
+        color:#ffffff;
+        border-radius: 5px;
+        width: 150px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    dl {
+        display: flex;
+    }
+    dt {
+        padding-right:5px;
+
+    }
+
+    audio {
+        position: absolute;
+        bottom:150px;
+        left:5px;
+    }
+    #trending ::-webkit-scrollbar {
+            width: 15px;
+    }
+    #trending ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 15px #590242;
+    }
+    #trending ::-webkit-scrollbar-thumb {
+        background:#590242;
+        border-radius: 5px;
+    }
+    #trending ::-webkit-scrollbar-thumb:hover {
+        background: #020659;
+    }
+    #playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+        width: 15px;
+    }
+    #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+        box-shadow: inset 0 0 15px #020659;
+    }
+    #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+        background: #020659;
+        border-radius: 5px;
+    }
+    #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+        background: #ffffff;
+    }
+    h2 {
+        font-size: 1em;
+        font-weight: bold;
+        color:#590242;
+        margin-left:25px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
 }
-#trending ::-webkit-scrollbar-thumb {
-    background:#590242;
-    border-radius: 5px;
-}
-#trending ::-webkit-scrollbar-thumb:hover {
-    background: #020659;
-}
-#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
-    width: 15px;
-}
-#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
-    box-shadow: inset 0 0 15px #020659;
-}
-#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
-    background: #020659;
-    border-radius: 5px;
-}
-#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-    background: #ffffff;
-}
-/*custom scroll end*/
-/*custom audio*/
-audio::-webkit-media-controls-mute-button {
-    background-color: #ffffff;
-    border-radius: 50%;
-}
-audio::-webkit-media-controls-play-button {
-    background-color: #ffffff;
-    border-radius: 50%;
-}
-audio::-webkit-media-controls-enclosure {
-    background-color:rgba(255, 255, 255, .5);
-}
-/*custom audio end*/
