@@ -468,6 +468,7 @@ html {
         padding: 10px;
         margin: 10px;
     }
+    
 
     dl {
         display: flex;
@@ -516,5 +517,14 @@ html {
         margin-bottom: 15px;
         margin-top: 15px;
     }
+    dl {
+        font-size: 1em;
+        color:#590242;
+    }
+    dd {
+        font-size: 1em;
+        color:#590242;
+    }
+
 
 }
